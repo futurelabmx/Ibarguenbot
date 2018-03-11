@@ -16,6 +16,7 @@
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
     <!-- Import main CSS -->
     <link href="../static/css/style.css" rel="stylesheet">
@@ -45,15 +46,55 @@
 
   </head>
 
-  <body class="nice_text"  style="padding:200px; font-size:1.7em;" onload="genText()">
-  <h1 style="font-size:4.7em; padding:30px;" class="text-primary">Ibargüenbot</h1>
-  <div>
-    <form action="/generate" method="post">
-      <button class="btn btn-info btn-lg" type="submit" style="font-family: 'Satisfy', cursive;">Generar texto</button>
-    </form>
-    <p id="demo" style="font-size:2.0em; padding:30px;"> {{ text }} </p>
-  </div>
+  <body class="nice_text" style="font-size:1.7em;" onload="genText()">
 
+  <!-- Text generation -->
+  <section class="content-section bg-light" style="font-family: 'Satisfy', cursive;">
+    <div class="container text-center about">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div class="content-section-heading" style="margin:70px 0px;">
+            <img src="https://www.edizionisur.it/wp-content/uploads/2017/11/Jorge-Ibarguengoitia.jpg" class="img-circle" alt="Jorge Ibargüengoitia">
+            <h1 style="font-size:4.5em;" class="text-primary mb-0">Ibargüenbot</h1>
+          </div>
+          <div class="container mb-12 text-center col-lg-12 mx-auto">
+            <form action="/generate" method="post">
+              <button class="btn btn-info btn-lg" type="submit" style="font-family: 'Satisfy', cursive;">Generar texto</button>
+            </form>
+            <p id="demo" style="font-size:2.0em; padding:30px;"> {{ text }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+
+  <footer class="footer text-center" style="font-family: 'Dosis', sans-serif;">
+    <div class="container">
+      <h4 class="">Acerca de</h4>
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://filey.org.mx">
+            <img src="https://fileyorgmx.files.wordpress.com/2017/09/filey-logo.png" height="80"/>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="http://www.ugto.mx/">
+            <img src="http://drh.ugto.mx/assets/escudo-ug-vertical.png" height="80"/>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="http://www.guanajuato.gob.mx/">
+            <img src="http://www.f-airmexico.com.mx/2017/wp-content/uploads/2017/10/COLABORADOR-GUANAJUATO.png" height="80"/>
+          </a>
+        </li>
+      </ul>
+      <h5 class="">Proyecto desarrollado por Future·Lab @ Universidad de Guanajuato.</h5>
+      <a class="" href="https://filey.org.mx/" target="_blank">FILEY 2018</a>
+      <br />
+      <br />
+    </div>
+  </footer>
   </body>
 
 </html>

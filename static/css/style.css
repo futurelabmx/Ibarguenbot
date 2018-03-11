@@ -4,6 +4,10 @@
   font-family: 'Satisfy', cursive;
 }
 
+.about {
+  font-family: 'Dosis', sans-serif;
+}
+
 /* Blinking effect */
 .blinking {
   animation: blinker 1s linear infinite;
