@@ -1,0 +1,16 @@
+/* Website style */
+.nice_text {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+}
+
+/* Blinking effect */
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
