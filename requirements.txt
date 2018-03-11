@@ -1,2 +1,3 @@
+gunicorn
 flask==0.12.1
 markovify==0.7.1
