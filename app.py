@@ -16,7 +16,7 @@ def index():
 # Generate text:
 @app.route("/generate", methods=['GET', 'POST'])
 def generate():
-    model = generate_model("../docs/lasmuertas.txt")
+    model = generate_model("docs/lasmuertas.txt")
     text = model.make_short_sentence(250)
     print(text)
     return render_template('index.html', text=text)
